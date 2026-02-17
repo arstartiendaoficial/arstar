@@ -15,11 +15,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
   color: #333;
   line-height: 1.6;
   background-image: url("https://i.imgur.com/ii7JLET.jpeg");
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
