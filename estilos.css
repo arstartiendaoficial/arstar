@@ -268,6 +268,9 @@ font-family: "Bitcount Grid Double", system-ui;
     transform: scale(1.05);
 }
 @media (max-width: 768px) {
+.body {
+   background-size: auto 100%;
+}
 .producto {
    width: 90%;
    max-width: none;
