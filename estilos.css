@@ -68,30 +68,30 @@ body {
     right: 10px;
 }
 
-#tejidos {
+.seccion-productos {
   max-width: 1200px;
-  margin: auto;
-}
-
-.productos {
-  padding: 60px 20px;
-  background-color: #F0FF40;
-  text-align: center;
+  margin: 0 auto;
 }
 .contenedor-productos {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  justify-content: start;
+  align-items: stretch;
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 30px;
+  width: 100%;
 }
 
 .producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
   border-radius: 15px;
-  width: 100%;
-  max-width: 280px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  width: 280px;
+  flex: 0 0 280px;
+  padding: 25px 20px;
   transition: transform 0.3s ease;
   background: url("https://i.imgur.com/WDHyNtv.jpeg");
   background-size: cover;
@@ -149,8 +149,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15)
-  color: var(--blanco);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -158,7 +157,7 @@ header {
 header h1 {
   font-size: 2.5rem;
   letter-spacing: 1px;
-  color: #911800;
+  color: #3D0D00;
   font-family: "Slackey", sans-serif;
 }
 
@@ -208,17 +207,17 @@ main {
   margin: auto;
   padding: 2rem 1rem;
 }
-
 section {
-  margin-bottom: 3rem;
+  padding: 60px 20px;
+  box-sizing: border-box;
 }
 section h2 {
-color: #911800;
+color: #3D0D00;
 font-family: "Barriecito", system-ui;
 font-size: 30px;
 }
 section p {
-color: #911800;
+color: #3D0D00;
 font-family: "Sour Gummy", sans-serif;
 font-weight: 500;
 font-size: 20px;
@@ -226,6 +225,26 @@ font-size: 20px;
 footer p {
 color: #FEFFB8;
 font-family: "Bitcount Grid Double", system-ui;
+}
+.correo-btn {
+    width: fit-content;
+    display: inline-flex;
+    background-color: #911800;
+    color: #FEFFB8;
+    padding: 10px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+	font-size: 20px;
+	font-family: "Sour Gummy", sans-serif;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	align-self: center;
+}
+.correo-btn:hover {
+    transform: scale(1.05);
 }
 .instagram-btn {
     width: fit-content;
@@ -247,6 +266,7 @@ font-family: "Bitcount Grid Double", system-ui;
 
 .instagram-btn:hover {
     opacity: 0.8;
+	transform: scale(1.05);
 }
 .whatsapp-btn {
     display: inline-flex;
