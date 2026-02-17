@@ -9,6 +9,7 @@
 
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -271,9 +272,16 @@ font-family: "Bitcount Grid Double", system-ui;
 .body {
    background-size: auto 100%;
 }
+.contenedor-productos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
 .producto {
-   width: 90%;
+   width: 95%;
    max-width: none;
+   margin: 0 auto;
 }
 nav {
    flex-wrap: wrap;
