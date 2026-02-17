@@ -273,14 +273,13 @@ font-family: "Bitcount Grid Double", system-ui;
    background-size: auto 100%;
 }
 .contenedor-productos {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
+   display: grid;
+   justify-items: center;
+   grid-template-columns: 1fr;
 }
 .producto {
    width: 95%;
-   max-width: none;
+   max-width: 500px;
    margin: 0 auto;
 }
 nav {
